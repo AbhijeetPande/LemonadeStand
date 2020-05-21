@@ -1,1 +1,6 @@
-<p>product works!</p>
+<form (ngSubmit) = "onSubmit()" #productForm ="ngForm">
+    <label>Your Drink today:  </label>
+        <select class="main-navigation" [(ngModel)]='selectedProduct' [ngModelOptions]="{standalone: true}" (click) = "printNewSelection(); onSubmit()" >Dropdown
+          <option  class="item" *ngFor = "let current of completeList"  [ngValue]="current"> {{ current?.drinkname }}, $ {{ current?.price }}  </option>
+        </select>
+  </form>

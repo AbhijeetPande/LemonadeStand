@@ -1,0 +1,23 @@
+.main-navigation {
+    width: 100%;
+    position: relative;
+    ul {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 18px;
+      .item {
+        display: inline;
+        padding-right: 43px;
+        font-size: 13px;
+        text-transform: uppercase;
+        // this is where the subitem is supposed to show on hover
+        &:hover .subitem {
+          display: block;
+        }
+      }
+    }
+  }
+  
+  .subitem {
+     display: none;
+  }

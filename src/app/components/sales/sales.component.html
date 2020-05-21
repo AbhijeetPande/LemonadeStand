@@ -1,2 +1,7 @@
-<script>"v.getEmployeesList()"</script>
-<p>sales works!</p>
+<!-- <p *ngIf="!EmployeeListforSales">Loading data ...</p> -->
+<form (ngSubmit) = "onSubmit()" #heroForm="ngForm">
+
+<app-employees></app-employees>
+<app-product></app-product>
+<button type="submit" class="btn btn-primary" >Submit</button>
+</form>
